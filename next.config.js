@@ -1,4 +1,3 @@
-/** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
   eslint: {
@@ -8,13 +7,15 @@ const nextConfig = {
     // Handle SVG files
     config.module.rules.push({
       test: /\.svg$/,
-      use: ["@svgr/webpack"],
+      use: ["@svgr/webpack"]
     });
 
-    // Return the modified //
+    // Return the modified config
     return config;
   },
-  output: "export",
+
+  // Added configuration for static export
+  output: 'export',
 };
 
-export default nextConfig;
+module.exports = nextConfig;
