@@ -8,15 +8,13 @@ const nextConfig = {
     // Handle SVG files
     config.module.rules.push({
       test: /\.svg$/,
-      use: ["@svgr/webpack"]
+      use: ["@svgr/webpack"],
     });
 
-    // Return the modified config
+    // Return the modified //
     return config;
   },
-
-  // Added configuration for static export
-  output: 'export',
+  output: "export",
 };
 
-module.exports = nextConfig;
+export default nextConfig;
