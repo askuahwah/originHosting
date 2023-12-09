@@ -16,7 +16,7 @@ const nextConfig = {
     return config;
   },
 
-  // Added configuration for static export
 };
 
-module.exports = nextConfig;
+export default nextConfig;
+
