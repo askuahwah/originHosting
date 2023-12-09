@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',
   reactStrictMode: true,
   eslint: {
     ignoreDuringBuilds: true,
@@ -16,7 +17,6 @@ const nextConfig = {
   },
 
   // Added configuration for static export
-  output: 'export',
 };
 
 module.exports = nextConfig;
